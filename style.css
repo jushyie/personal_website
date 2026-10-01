@@ -1,0 +1,55 @@
+#hello:hover{
+    background-color: purple !important;
+
+}
+#hello{
+    transition: background-color 0.3s ease-in;
+}
+
+#home:hover{
+    color:black
+}
+
+#home{
+    color:gray;
+    transition: color 0.3s ease-in;
+}
+
+#traveling:hover{
+    color:black
+}
+
+#traveling{
+    color:gray;
+    transition: color 0.3s ease-in;
+}
+
+#baking:hover{
+    color:black
+}
+
+#baking{
+    color:gray;
+    transition: color 0.3s ease-in;
+}
+
+#crochet:hover{
+    color:black
+}
+
+#crochet{
+    color:gray;
+    transition: color 0.3s ease-in;
+}
+
+.navigationBox {
+  width: 20em;
+  height: 3em;
+  border: 1px solid #333333;
+  padding: 8px 8px;
+  background-color:dimgray
+}
+
+.startpageText {
+    
+}
