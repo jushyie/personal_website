@@ -9,33 +9,94 @@
 body {
     background-color: #263822;
     color: #E2E9CD;
+    font-size: 22px;
     margin: 0; 
+    padding: 24px;
+}
+
+/* --- mobile display layout --- */
+.navigationBox{
+    position: relative;
+    background-color: #A9BF6E;
+    border: none;
+    border-radius: 16px;
+    padding: 8px;
+}
+
+.hamburgerMenu {
+    cursor: pointer;
+    background-color: transparent;
+    color: #607132;
+    border: none;
+    padding: 0px 0px;
+    font-size: 24px;
 }
 
 .navigationBox ul {
-    list-style: none;
     display: flex;
-    width: 20em;
-    height: 3em;
-    border: 1.5px solid ;
-    padding: 8px 8px;
-    background-color: #A9BF6E;
-    color: #607132;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0px 6px;
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out, padding 0.3s ease;
+}
+
+.navigationBox ul.open {
+    max-height: 200px;
+    opacity: 1;
+    padding-bottom: 6px;
+    padding-right: 12px;
+    padding-top: 12px;
+    gap: 6px;
 }
 
 .navigationBox a {
-    color: #623271;
-    text-decoration: none;
-    font-weight: bold;
-}
+        color: #E2E9CD;
+        text-decoration: none;
+        font-weight: bold;
+    }
 
-.navigationBox a:hover{
-    color: #327143;
-    transition: color 0.3s ease-in;
-}
+/* --- desktop screen layout --- */
+@media (min-width: 600px) {
+    .layout {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        width: 60%;
+        height: fit-content;
+        margin: auto;
+    }
+    .hamburgerMenu{
+        display: none;
+    }
 
-.startpageText {
-    
+    .navigationBox {
+        position: relative;
+        background-color: #A9BF6E;
+        border: none;
+        border-radius: 16px;
+        padding: 8px;
+    }
+    .navigationBox ul {
+        list-style: none;
+        display: flex ;
+        flex-direction: row;
+        max-height: 200px;
+        opacity: 1;
+        border: none;
+        background-color: #A9BF6E;
+        color: #607132;
+        align-items: center;
+        justify-content: space-around;
+        padding: 12px;
+    }
+
+    .navigationBox a:hover{
+        color: #655E3E;
+        transition: color 0.2s ease-in;
+    }
 }
