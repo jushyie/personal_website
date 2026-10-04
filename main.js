@@ -16,11 +16,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let hamburgerMenu = document.getElementById("hamburgerMenu");
         let navList = document.getElementById("navList");
-            if (hamburgerMenu && navList){
+        if (hamburgerMenu && navList){
             hamburgerMenu.addEventListener("click", () => {
                 navList.classList.toggle("open");
             });
         }
+
+        let currentSubpage = window.location.pathname.split("/").pop();
+        if (currentSubpage === "" || currentSubpage === "/") {
+            currentSubpage = "index.html";
+        }
+
+        let navBoxLinks = navigationBox.querySelectorAll("a");
+
+        navBoxLinks.forEach(link => {
+            let linkhref = link.getAttribute("href");
+
+            if (linkhref === currentSubpage){
+                link.classList.add("active");
+
+                /* navElement unclickable if currently on that page */
+                link.removeAttribute("href");
+                link.style.cursor = "default";
+            }
+        });
     }
 
     let hello = document.getElementById("hello")

@@ -19,14 +19,14 @@ body {
     position: relative;
     background-color: #A9BF6E;
     border: none;
-    border-radius: 16px;
+    border-radius: 32px;
     padding: 8px;
 }
 
 .hamburgerMenu {
     cursor: pointer;
     background-color: transparent;
-    color: #607132;
+    color: #655E3E;
     border: none;
     padding: 0px 0px;
     font-size: 24px;
@@ -57,7 +57,7 @@ body {
 .navigationBox a {
         color: #E2E9CD;
         text-decoration: none;
-        font-weight: bold;
+        font-weight: 600;
     }
 
 /* --- desktop screen layout --- */
@@ -78,8 +78,8 @@ body {
         position: relative;
         background-color: #A9BF6E;
         border: none;
-        border-radius: 16px;
-        padding: 8px;
+        border-radius: 32px;
+        padding: 10px;
     }
     .navigationBox ul {
         list-style: none;
@@ -89,7 +89,6 @@ body {
         opacity: 1;
         border: none;
         background-color: #A9BF6E;
-        color: #607132;
         align-items: center;
         justify-content: space-around;
         padding: 12px;
@@ -99,4 +98,11 @@ body {
         color: #655E3E;
         transition: color 0.2s ease-in;
     }
+
+    .navigationBox a.active{
+        color: #655E3E;
+        font-weight:900;
+        font-size:28px;
+    }
+    
 }
