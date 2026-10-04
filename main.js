@@ -1,13 +1,17 @@
 
 const navBoxHTML = `
-    <button class="hamburgerMenu" id="hamburgerMenu">&#9776;</button>
-        <ul id="navList">
-            <li><a id="home" href="index.html">Home</a></li>
-            <li><a id="traveling" href="traveling.html">Traveling</a></li>
-            <li><a id="baking" href="baking.html">Baking</a></li>
-            <li><a id="crochet" href="crochet.html">Crochet</a></li>
-        </ul>
-        `;
+    <div class="navHeader">
+        <button class="hamburgerMenu" id="hamburgerMenu">&#9776;</button>
+        <img src="visuals/homePageGIF.gif" class="homePageGIF" id="homePageGIF">
+        <p class="headerDummy"></p>
+    </div> 
+    <ul id="navList">
+        <li><a id="home" href="index.html">Home</a></li>
+        <li><a id="travel" href="travel.html">Travel</a></li>
+        <li><a id="baking" href="baking.html">Baking</a></li>
+        <li><a id="crochet" href="crochet.html">Crochet</a></li>
+    </ul>
+    `;
 
 document.addEventListener('DOMContentLoaded', () => {
     const navigationBox = document.getElementById("navigationBox");
