@@ -2,7 +2,7 @@
 const navBoxHTML = `
     <div class="navHeader">
         <button class="hamburgerMenu" id="hamburgerMenu">&#9776;</button>
-        <img src="visuals/homePageGIF.gif" class="homePageGIF" id="homePageGIF">
+        <img class="pageGIF" id="pageGIF">
         <p class="headerDummy"></p>
     </div> 
     <ul id="navList">
@@ -44,6 +44,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 link.style.cursor = "default";
             }
         });
+
+        /* set GIF for current page */
+        let currPageGIF = document.getElementById("pageGIF")
+        if (currPageGIF){
+            switch (currentSubpage){
+                case ("index.html") : 
+                    currPageGIF.src = "visuals/homePageGIF.gif";
+                    break;
+                case ("travel.html") : 
+                    currPageGIF.src = "visuals/travelPageGIF.gif";
+                    break;
+                default:
+                    currPageGIF.src = "";
+                    break;
+            }
+
+        }
+        
+
     }
 
     let hello = document.getElementById("hello")
