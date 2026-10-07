@@ -8,8 +8,7 @@ const navBoxHTML = `
     <ul id="navList">
         <li><a id="home" href="index.html">Home</a></li>
         <li><a id="travel" href="travel.html">Travel</a></li>
-        <li><a id="baking" href="baking.html">Baking</a></li>
-        <li><a id="crochet" href="crochet.html">Crochet</a></li>
+        <li><a id="bake" href="bake.html">Bake</a></li>
     </ul>
     `;
 
@@ -54,6 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     break;
                 case ("travel.html") : 
                     currPageGIF.src = "visuals/travelPageGIF.gif";
+                    break;
+                case ("bake.html") :
+                    currPageGIF.src = "visuals/bakePageGIF.gif";
                     break;
                 default:
                     currPageGIF.src = "";
