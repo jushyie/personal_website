@@ -63,8 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
         }
-        
-
     }
 
     let hello = document.getElementById("hello")
