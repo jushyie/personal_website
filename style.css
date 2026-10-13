@@ -79,6 +79,9 @@ body {
     }
 
 
+.taiwanFoodList li{
+    list-style:circle;
+}
 
 /* --- desktop screen layout --- */
 @media (min-width: 600px) {
