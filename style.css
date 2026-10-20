@@ -83,6 +83,20 @@ body {
     list-style:circle;
 }
 
+.bakeLinkBox {
+    display: flex;
+    align-items: center;
+    gap:5px;
+    background: #655E3E;
+    border-radius: 10px;
+    height:50px;
+    padding: 5px;
+}
+.bakeLink {
+    color: #A9BF6E;
+}
+
+
 /* --- desktop screen layout --- */
 @media (min-width: 600px) {
     .layout {

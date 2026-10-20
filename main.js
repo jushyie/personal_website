@@ -12,6 +12,10 @@ const navBoxHTML = `
     </ul>
     `;
 
+const gifOnOffButtonHTML = `
+    <button clas="gifOnOffButton" id="gifOnOffButton">
+    `
+
 document.addEventListener('DOMContentLoaded', () => {
     const navigationBox = document.getElementById("navigationBox");
     if (navigationBox) {
