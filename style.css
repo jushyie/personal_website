@@ -46,8 +46,13 @@ body {
     padding: 0px 0px;
     font-size: 24px;
 }
-.headerDummy {
-
+.gifOnOff {
+    border-radius: 8px;
+    width: 28px;
+    height:fit-content;
+    background-color: #E2E9CD;
+    color:#263822;
+    border-color: #263822;
 }
 
 .navigationBox ul {
@@ -148,3 +153,5 @@ body {
     }
     
 }
+
+/* include a button to pause animation on desktop view!

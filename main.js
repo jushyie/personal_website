@@ -3,7 +3,7 @@ const navBoxHTML = `
     <div class="navHeader">
         <button class="hamburgerMenu" id="hamburgerMenu">&#9776;</button>
         <img class="pageGIF" id="pageGIF">
-        <p class="headerDummy"></p>
+        <button class="gifOnOff" id="gifOnOff">&#9208;</button>
     </div> 
     <ul id="navList">
         <li><a id="home" href="index.html">Home</a></li>
@@ -12,9 +12,6 @@ const navBoxHTML = `
     </ul>
     `;
 
-const gifOnOffButtonHTML = `
-    <button clas="gifOnOffButton" id="gifOnOffButton">
-    `
 
 document.addEventListener('DOMContentLoaded', () => {
     const navigationBox = document.getElementById("navigationBox");
@@ -51,9 +48,47 @@ document.addEventListener('DOMContentLoaded', () => {
         /* set GIF for current page */
         let currPageGIF = document.getElementById("pageGIF")
         if (currPageGIF){
+            /* GIF play/pause button */
+            let gifButton = document.getElementById("gifOnOff")
+            let playing = true
+            if (gifButton){
+                gifButton.addEventListener("click", () => {
+                    if (playing){
+                        gifButton.innerHTML = "&#9654;"
+                        playing = false
+                        
+                    }
+                    else{
+                        gifButton.innerHTML = "&#9208;"
+                        playing = true
+                    }
+                switch (currentSubpage){
+                case ("index.html") : 
+                    if (playing) currPageGIF.src = "visuals/homePageGIF.gif";
+                    else currPageGIF.src = "visuals/homePageImg.png";
+                    break;
+                case ("travel.html") : 
+                    if (playing) currPageGIF.src = "visuals/travelPageGIF.gif";
+                    else currPageGIF.src = "visuals/travelPageImg.png";
+                    break;
+                case ("food.html") :
+                    if (playing) currPageGIF.src = "visuals/foodPageGIF.gif";
+                    else currPageGIF.src = "visuals/foodPageImg.png";
+                    break;
+                case ("bake.html") :
+                    if (playing) currPageGIF.src = "visuals/bakePageGIF.gif";
+                    else currPageGIF.src = "visuals/bakePageImg.png";
+                    break;
+                default:
+                    currPageGIF.src = "";
+                    break;
+            }
+                })
+            }
             switch (currentSubpage){
                 case ("index.html") : 
-                    currPageGIF.src = "visuals/homePageGIF.gif";
+                    if (playing) currPageGIF.src = "visuals/homePageGIF.gif";
+                    else currPageGIF.src = "visuals/homePageImg.png";
                     break;
                 case ("travel.html") : 
                     currPageGIF.src = "visuals/travelPageGIF.gif";
@@ -63,13 +98,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     break;
                 case ("bake.html") :
                     currPageGIF.src = "visuals/bakePageGIF.gif";
+                    
                     break;
                 default:
                     currPageGIF.src = "";
                     break;
             }
-
+                
         }
+
+    
     }
 
     let hello = document.getElementById("hello")
