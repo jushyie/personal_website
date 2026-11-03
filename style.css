@@ -1,10 +1,10 @@
-#hello:hover{
+/* #hello:hover{
     background-color: purple !important;
 
 }
 #hello{
     transition: background-color 0.3s ease-in;
-}
+} */
 
 body {
     background-color: #263822;
