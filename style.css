@@ -91,6 +91,7 @@ body {
 .bakeLinkBox {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap:5px;
     background: #655E3E;
     border-radius: 10px;
