@@ -9,12 +9,26 @@ const navBoxHTML = `
         <li><a id="home" href="index.html">Home</a></li>
         <li><a id="travel" href="travel.html">Travel</a></li>
         <li><a id="food" href="food.html">Food</a></li>
+        <li><a id="bake" href="bake.html">Bake</a></li>
     </ul>
     `;
+const toTopButtonHTML = `
+    <button id="toTopButton" class="toTopButton">↑</button>
+`;
 
 
 document.addEventListener('DOMContentLoaded', () => {
     const navigationBox = document.getElementById("navigationBox");
+    const toTopButton = document.getElementById("toTopButton");
+    /* scroll to top button */
+    if (toTopButton){
+        toTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    }
     if (navigationBox) {
         navigationBox.innerHTML = navBoxHTML;
 

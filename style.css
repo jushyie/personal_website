@@ -6,6 +6,11 @@
     transition: background-color 0.3s ease-in;
 } */
 
+/* don't make navBar cover header when navigating (baking page) */
+h3 {
+    scroll-margin-top: 80px;
+}
+
 body {
     background-color: #263822;
     color: #E2E9CD;
@@ -102,6 +107,19 @@ body {
     color: #A9BF6E;
 }
 
+.recipeList a{
+    color:#A9BF6E;
+}
+.toTopButton {
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999; /* Forces it to sit on top of everything */
+    pointer-events: auto; /* Ensures it can be clicked */
+}
 
 /* --- desktop screen layout --- */
 @media (min-width: 600px) {
