@@ -121,6 +121,17 @@ body {
     pointer-events: auto; /* Ensures it can be clicked */
 }
 
+.picsGallery {
+    display: grid;
+    gap: 16px;
+    margin: 20px 0;
+}
+.picsGallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Prevents image stretching */
+    border-radius: 16px;
+}
 /* --- desktop screen layout --- */
 @media (min-width: 600px) {
     .layout {

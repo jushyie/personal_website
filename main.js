@@ -7,6 +7,7 @@ const navBoxHTML = `
     </div> 
     <ul id="navList">
         <li><a id="home" href="index.html">Home</a></li>
+        <li><a id="aboutMe" href="aboutMe.html">About Me</a></li>
         <li><a id="travel" href="travel.html">Travel</a></li>
         <li><a id="food" href="food.html">Food</a></li>
         <li><a id="bake" href="bake.html">Bake</a></li>
