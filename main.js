@@ -82,6 +82,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (playing) currPageGIF.src = "visuals/homePageGIF.gif";
                     else currPageGIF.src = "visuals/homePageImg.png";
                     break;
+                case ("aboutMe.html") :
+                    if (playing) currPageGIF.src = "visuals/aboutMePageGIF.gif";
+                    else currPageGIF.src = "visuals/aboutMePageImg.png";
+                    break;
                 case ("travel.html") : 
                     if (playing) currPageGIF.src = "visuals/travelPageGIF.gif";
                     else currPageGIF.src = "visuals/travelPageImg.png";
@@ -104,6 +108,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 case ("index.html") : 
                     if (playing) currPageGIF.src = "visuals/homePageGIF.gif";
                     else currPageGIF.src = "visuals/homePageImg.png";
+                    break;
+                case ("aboutMe.html") : 
+                    if (playing) currPageGIF.src = "visuals/aboutMePageGIF.gif";
+                    else currPageGIF.src = "visuals/aboutMePageImg.png";
                     break;
                 case ("travel.html") : 
                     currPageGIF.src = "visuals/travelPageGIF.gif";
