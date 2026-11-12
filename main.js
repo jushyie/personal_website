@@ -7,10 +7,10 @@ const navBoxHTML = `
     </div> 
     <ul id="navList">
         <li><a id="home" href="index.html">Home</a></li>
-        <li><a id="aboutMe" href="aboutMe.html">About Me</a></li>
-        <li><a id="travel" href="travel.html">Travel</a></li>
-        <li><a id="food" href="food.html">Food</a></li>
-        <li><a id="bake" href="bake.html">Bake</a></li>
+        <li><a id="aboutMe" href="/aboutMe/">About Me</a></li>
+        <li><a id="travel" href="/travel/">Travel</a></li>
+        <li><a id="food" href="/food/">Food</a></li>
+        <li><a id="bake" href="/bake/">Bake</a></li>
     </ul>
     `;
 const toTopButtonHTML = `
