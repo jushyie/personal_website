@@ -70,10 +70,25 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        let currentSubpage = window.location.pathname.split("/").pop();
-        if (currentSubpage === "" || currentSubpage === "/") {
+        let currentSubpage = window.location.pathname;
+        if (currentSubpage.includes("aboutMe")){
+            currentSubpage = "/aboutMe/";
+        }
+        else if (currentSubpage.includes("bake")){
+            currentSubpage = "/bake/";
+        }
+        else if (currentSubpage.includes("food")){
+            currentSubpage = "/food/";
+        }
+        else if (currentSubpage.includes("travel")){
+            currentSubpage = "/travel/";
+        }
+        else {
             currentSubpage = "index.html";
         }
+        
+        
+        
 
         let navBoxLinks = navigationBox.querySelectorAll("a");
 
@@ -108,24 +123,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 switch (currentSubpage){
                 case ("index.html") : 
-                    if (playing) currPageGIF.src = "visuals/homePageGIF.gif";
-                    else currPageGIF.src = "visuals/homePageImg.png";
+                    if (playing) currPageGIF.src = "/visuals/homePageGIF.gif";
+                    else currPageGIF.src = "/visuals/homePageImg.png";
                     break;
                 case ("aboutMe.html") :
-                    if (playing) currPageGIF.src = "visuals/aboutMePageGIF.gif";
-                    else currPageGIF.src = "visuals/aboutMePageImg.png";
+                    if (playing) currPageGIF.src = "/visuals/aboutMePageGIF.gif";
+                    else currPageGIF.src = "/visuals/aboutMePageImg.png";
                     break;
                 case ("travel.html") : 
-                    if (playing) currPageGIF.src = "visuals/travelPageGIF.gif";
-                    else currPageGIF.src = "visuals/travelPageImg.png";
+                    if (playing) currPageGIF.src = "/visuals/travelPageGIF.gif";
+                    else currPageGIF.src = "/visuals/travelPageImg.png";
                     break;
                 case ("food.html") :
-                    if (playing) currPageGIF.src = "visuals/foodPageGIF.gif";
-                    else currPageGIF.src = "visuals/foodPageImg.png";
+                    if (playing) currPageGIF.src = "/visuals/foodPageGIF.gif";
+                    else currPageGIF.src = "/visuals/foodPageImg.png";
                     break;
                 case ("bake.html") :
-                    if (playing) currPageGIF.src = "visuals/bakePageGIF.gif";
-                    else currPageGIF.src = "visuals/bakePageImg.png";
+                    if (playing) currPageGIF.src = "/visuals/bakePageGIF.gif";
+                    else currPageGIF.src = "/visuals/bakePageImg.png";
                     break;
                 default:
                     currPageGIF.src = "";
@@ -135,21 +150,21 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             switch (currentSubpage){
                 case ("index.html") : 
-                    if (playing) currPageGIF.src = "visuals/homePageGIF.gif";
-                    else currPageGIF.src = "visuals/homePageImg.png";
+                    if (playing) currPageGIF.src = "/visuals/homePageGIF.gif";
+                    else currPageGIF.src = "/visuals/homePageImg.png";
                     break;
                 case ("aboutMe.html") : 
-                    if (playing) currPageGIF.src = "visuals/aboutMePageGIF.gif";
-                    else currPageGIF.src = "visuals/aboutMePageImg.png";
+                    if (playing) currPageGIF.src = "/visuals/aboutMePageGIF.gif";
+                    else currPageGIF.src = "/visuals/aboutMePageImg.png";
                     break;
                 case ("travel.html") : 
-                    currPageGIF.src = "visuals/travelPageGIF.gif";
+                    currPageGIF.src = "/visuals/travelPageGIF.gif";
                     break;
                 case ("food.html") :
-                    currPageGIF.src = "visuals/foodPageGIF.gif";
+                    currPageGIF.src = "/visuals/foodPageGIF.gif";
                     break;
                 case ("bake.html") :
-                    currPageGIF.src = "visuals/bakePageGIF.gif";
+                    currPageGIF.src = "/visuals/bakePageGIF.gif";
                     
                     break;
                 default:
