@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (playing) currPageGIF.src = "/visuals/homePageGIF.gif";
                     else currPageGIF.src = "/visuals/homePageImg.png";
                     break;
-                case ("/about/") :
+                case ("/aboutMe/") :
                     if (playing) currPageGIF.src = "/visuals/aboutMePageGIF.gif";
                     else currPageGIF.src = "/visuals/aboutMePageImg.png";
                     break;
@@ -153,19 +153,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (playing) currPageGIF.src = "/visuals/homePageGIF.gif";
                     else currPageGIF.src = "/visuals/homePageImg.png";
                     break;
-                case ("/aboutMe/") : 
+                case ("/aboutMe/") :
                     if (playing) currPageGIF.src = "/visuals/aboutMePageGIF.gif";
                     else currPageGIF.src = "/visuals/aboutMePageImg.png";
                     break;
                 case ("/travel/") : 
-                    currPageGIF.src = "/visuals/travelPageGIF.gif";
+                    if (playing) currPageGIF.src = "/visuals/travelPageGIF.gif";
+                    else currPageGIF.src = "/visuals/travelPageImg.png";
                     break;
                 case ("/food/") :
-                    currPageGIF.src = "/visuals/foodPageGIF.gif";
+                    if (playing) currPageGIF.src = "/visuals/foodPageGIF.gif";
+                    else currPageGIF.src = "/visuals/foodPageImg.png";
                     break;
                 case ("/bake/") :
-                    currPageGIF.src = "/visuals/bakePageGIF.gif";
-                    
+                    if (playing) currPageGIF.src = "/visuals/bakePageGIF.gif";
+                    else currPageGIF.src = "/visuals/bakePageImg.png";
                     break;
                 default:
                     currPageGIF.src = "";
