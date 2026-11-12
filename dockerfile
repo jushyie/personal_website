@@ -1,3 +1,3 @@
 FROM nginx:alpine
 COPY . /usr/share/nginx/html
-RUN find /usr/share/nginx/html -type f ( -name ".JPG" -o -name ".JPEG" ) -exec sh -c 'for f; do mv "$f" "${f%.JPG}.jpg"; done' _ {} +
+RUN cd /usr/share/nginx/html/images && for f in *.JPG; do [ -e "$f" ] && mv "$f" "${f%.JPG}.jpg"; done
