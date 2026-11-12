@@ -6,7 +6,7 @@ const navBoxHTML = `
         <button class="gifOnOff" id="gifOnOff">&#9208;</button>
     </div> 
     <ul id="navList">
-        <li><a id="home" href="index.html">Home</a></li>
+        <li><a id="home" href="/index.html">Home</a></li>
         <li><a id="aboutMe" href="/aboutMe/">About Me</a></li>
         <li><a id="travel" href="/travel/">Travel</a></li>
         <li><a id="food" href="/food/">Food</a></li>
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
             currentSubpage = "/travel/";
         }
         else {
-            currentSubpage = "index.html";
+            currentSubpage = "/index.html";
         }
         
         
@@ -122,23 +122,23 @@ document.addEventListener('DOMContentLoaded', () => {
                         playing = true
                     }
                 switch (currentSubpage){
-                case ("index.html") : 
+                case ("/index.html") : 
                     if (playing) currPageGIF.src = "/visuals/homePageGIF.gif";
                     else currPageGIF.src = "/visuals/homePageImg.png";
                     break;
-                case ("aboutMe.html") :
+                case ("/about/") :
                     if (playing) currPageGIF.src = "/visuals/aboutMePageGIF.gif";
                     else currPageGIF.src = "/visuals/aboutMePageImg.png";
                     break;
-                case ("travel.html") : 
+                case ("/travel/") : 
                     if (playing) currPageGIF.src = "/visuals/travelPageGIF.gif";
                     else currPageGIF.src = "/visuals/travelPageImg.png";
                     break;
-                case ("food.html") :
+                case ("/food/") :
                     if (playing) currPageGIF.src = "/visuals/foodPageGIF.gif";
                     else currPageGIF.src = "/visuals/foodPageImg.png";
                     break;
-                case ("bake.html") :
+                case ("/bake/") :
                     if (playing) currPageGIF.src = "/visuals/bakePageGIF.gif";
                     else currPageGIF.src = "/visuals/bakePageImg.png";
                     break;
@@ -149,21 +149,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 })
             }
             switch (currentSubpage){
-                case ("index.html") : 
+                case ("/index.html") : 
                     if (playing) currPageGIF.src = "/visuals/homePageGIF.gif";
                     else currPageGIF.src = "/visuals/homePageImg.png";
                     break;
-                case ("aboutMe.html") : 
+                case ("/aboutMe/") : 
                     if (playing) currPageGIF.src = "/visuals/aboutMePageGIF.gif";
                     else currPageGIF.src = "/visuals/aboutMePageImg.png";
                     break;
-                case ("travel.html") : 
+                case ("/travel/") : 
                     currPageGIF.src = "/visuals/travelPageGIF.gif";
                     break;
-                case ("food.html") :
+                case ("/food/") :
                     currPageGIF.src = "/visuals/foodPageGIF.gif";
                     break;
-                case ("bake.html") :
+                case ("/bake/") :
                     currPageGIF.src = "/visuals/bakePageGIF.gif";
                     
                     break;
